@@ -4,7 +4,11 @@ html{
   color: #1B3B23;
   background-color: #FFF;
 }
+body{
+  margin: 0px;
+}
 #wrapper{
+  min-height: 100vh;
   background-color: #F9FFFA;
 }
 .wrapper-center{
@@ -12,6 +16,9 @@ html{
 }
 a{
   text-decoration: none;
+}
+a:hover, button:hover{
+  opacity: 0.7;
 }
 a:visited{
   text-decoration: none;
@@ -22,11 +29,46 @@ li{
 ul{
   text-decoration: none;
 }
+button, input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+button{
+  border: none;
+}
+input{
+  padding: 0px 5px;
+  border: #F6F6F6 solid 1.5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
 h1{
   font-size: 30;
   color: #3A7F4B;
 }
+.gray{
+  color: #6C7D70;
+}
 /* ---- パーツ ---- */
+.box{
+  margin: 50px;
+  padding: 50px;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.form{
+  margin: 0 auto;
+}
+
+.link-button{
+  border-radius: 10px;
+  color: #FFF;
+  margin-left: 20px;
+  background-color: #3A7F4B;
+  font-size: 16px;
+}
 .button-big{
   padding: 15px 30px;
   font-size: 20;
@@ -34,17 +76,11 @@ h1{
 .button-small{
   padding: 10px 30px;
 }
-.link-button{
-  border-radius: 10px;
-  color: #FFF;
-  margin-left: 20px;
-  background-color: #3A7F4B;
-}
 
-/* ---- ページスタイリング ---- */
+/* ---- index.html ---- */
 header{
-  height: 60px;
-  padding: 10px 30px;
+  height: 40px;
+  padding: 20px 30px;
   vertical-align: middle;
   background-color: #FFF;
 }
@@ -92,4 +128,38 @@ header .link-button{
 }
 #about .link-button{
   margin: 0 auto;
+}
+
+/* ---- login.html ---- */
+#login.box{
+  margin: 50px auto;
+  width: 50%;
+  text-align: center;
+}
+#login.box h1{
+  margin: 20px 0 50px 0;
+  text-align: center;
+}
+#login.box form{
+  margin: 0 auto;
+  width: 80%;
+}
+#login.box label{
+  text-align: left;
+  display: block;
+  color: #6C7D70;
+  font-size: 12.5;
+}
+#login.box input{
+  display: inline-block;
+  height: 35px;
+  margin: 0px 0px 20px 0px;
+  border-radius: 5px;
+  width: 100%;
+}
+#login.box button{
+  margin: 40px 0;
+}
+#login.box a{
+  float: right;
 }
