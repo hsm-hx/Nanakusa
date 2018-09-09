@@ -1,0 +1,94 @@
+html{
+  width: 1000px;
+  margin: 0 auto;
+  color: #1B3B23;
+  background-color: #FFF;
+}
+#wrapper{
+  background-color: #F9FFFA;
+}
+.wrapper-center{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+li{
+  text-decoration: none;
+}
+ul{
+  text-decoration: none;
+}
+h1{
+  font-size: 30;
+  color: #3A7F4B;
+}
+/* ---- パーツ ---- */
+.button-big{
+  padding: 15px 30px;
+  font-size: 20;
+}
+.button-small{
+  padding: 10px 30px;
+}
+.link-button{
+  border-radius: 10px;
+  color: #FFF;
+  margin-left: 20px;
+  background-color: #3A7F4B;
+}
+
+/* ---- ページスタイリング ---- */
+header{
+  height: 60px;
+  padding: 10px 30px;
+  vertical-align: middle;
+  background-color: #FFF;
+}
+header img{
+  vertical-align: middle;
+}
+header .link-button{
+  float: right;
+}
+#eyecatch{
+  height: 440px;
+  text-align: center;
+  background-image: url("../img/ind-bg.png");
+}
+#eyecatch .link-button{
+  position: relative;
+  top: 180px;
+}
+#eye-1{
+  position: relative;
+  top: 100px;
+  display: block;
+  font-size: 45;
+}
+#eye-2{
+  position: relative;
+  top: 120px;
+  display: block;
+  font-size: 25;
+}
+
+#about{
+  padding: 10px 50px 100px 50px;
+}
+#about p{
+  margin: 50px 0;
+}
+#about h1 img{
+  vertical-align: bottom;
+}
+#about #example{
+  float: left;
+  width: 380px;
+}
+#about .link-button{
+  margin: 0 auto;
+}
