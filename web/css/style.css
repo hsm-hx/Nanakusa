@@ -87,6 +87,7 @@ header .link-button{
 }
 #about #example{
   float: left;
+  margin-right: 20px;
   width: 380px;
 }
 #about .link-button{
