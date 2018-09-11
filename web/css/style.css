@@ -6,6 +6,7 @@ html{
 }
 body{
   margin: 0px;
+  font-size: 15px;
 }
 #wrapper{
   min-height: 100vh;
@@ -29,7 +30,7 @@ li{
 ul{
   text-decoration: none;
 }
-button, input{
+button{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -37,14 +38,74 @@ button, input{
 button{
   border: none;
 }
-input{
+div.form{
+  margin-bottom: 20px;
+}
+input[type="text"], input[type="password"]{
+  display: inline-block;
+  height: 35px;
+  width: 100%;
   padding: 0px 5px;
   border: #F6F6F6 solid 1.5px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+}
+label.h{
+  text-align: left;
+  display: block;
+  color: #6C7D70;
+  font-size: 12.5;
+}
+label.radio{
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 140px;
+  text-align: left;
+}
+input[type="radio"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="radio"] + span::before{
+  display: inline-block;
+  margin-right: 10px;
+
+  content: '';
+  box-sizing: border-box;
+  border-radius: 100%;
+
+  width: 15px;
+  height: 15px;
+  border: 2px #E2E2E2 solid;
+}
+input[type="radio"]:checked + span::before {
+  border-width: 7.5px;
+}
+form{
+  margin: 0 auto;
+  width: 80%;
 }
 h1{
   font-size: 30;
   color: #3A7F4B;
+}
+h2{
+  font-size: 30;
+  font-weight: 300;
+  padding-left: 55px;
+}
+h2.okayu{
+  background: url("../img/kama.png") no-repeat;
+}
+h3{
+  padding-left: 35px;
+  margin: 10px 0;
+  font-size: 23;
+  font-weight: 300;
+}
+h3.cook{
+  background: url("../img/cook.png") no-repeat;
 }
 .gray{
   color: #6C7D70;
@@ -57,9 +118,38 @@ h1{
   border-radius: 20px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
+.box.post{
+  margin: 30px 0;
+  padding: 10px;
+  border: #F6F6F6 solid 1.5px;
+}
+
+
+.post-bottom{
+  position: relative;
+  text-align: right;
+}
+.likes{
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  color: #DF5656;
+  padding-left: 25px;
+  background: url("../img/like.png") no-repeat;
+}
+.post-user{
+  display: inline-block;
+}
 
 .form{
   margin: 0 auto;
+}
+
+.user-icon{
+  border-radius: 50%;
+}
+.user-icon-small{
+  width: 45px;
 }
 
 .link-button{
@@ -77,19 +167,28 @@ h1{
   padding: 10px 30px;
 }
 
-/* ---- index.html ---- */
+/* ---- header ---- */
 header{
   height: 40px;
-  padding: 20px 30px;
+  padding: 20px 80px;
   vertical-align: middle;
   background-color: #FFF;
 }
 header img{
   vertical-align: middle;
 }
-header .link-button{
+header .right{
   float: right;
 }
+header .right img{
+  margin-left: 50px;
+}
+header .right-button{
+  margin-top: 10px;
+  float: right;
+}
+
+/* ---- index.html ---- */
 #eyecatch{
   height: 440px;
   text-align: center;
@@ -140,26 +239,20 @@ header .link-button{
   margin: 20px 0 50px 0;
   text-align: center;
 }
-#login.box form{
-  margin: 0 auto;
-  width: 80%;
-}
-#login.box label{
-  text-align: left;
-  display: block;
-  color: #6C7D70;
-  font-size: 12.5;
-}
-#login.box input{
-  display: inline-block;
-  height: 35px;
-  margin: 0px 0px 20px 0px;
-  border-radius: 5px;
-  width: 100%;
-}
 #login.box button{
   margin: 40px 0;
 }
 #login.box a{
   float: right;
+}
+
+/* ---- post.html ---- */
+.top-posts{
+  text-align: center;
+}
+.posts-2column{
+  text-align: left;
+  display: inline-block;
+  width: 40%;
+  margin: 0 30px;
 }
