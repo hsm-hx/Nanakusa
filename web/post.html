@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Nanakusa - 成功をシェアするSNS</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <a href="index.html">
+          <img src="img/logo.png" width="220" alt="logo">
+        </a>
+        <div class="right">
+          <a href="post.html">
+            <img src="img/pen.png" width="45" alt="新規投稿">
+          </a>
+          <a href="user.html">
+            <img class="user-icon user-icon-small" src="img/user/mfvlO0Bx_400x400.jpg" alt="mypage">
+          </a>
+        </div>
+      </header>
+      <div class="post">
+        <h2 class="pen">新規投稿</h2>
+          <form action="detail.html" method="GET">
+            <div class="form">
+              <label class="h">タイトル</label>
+              <input type="text">
+            </div>
+            <div class="form">
+              <label class="h">概要</label>
+              <textarea rows="2"></textarea>
+            </div>
+            <div class="form">
+              <label class="h">カテゴリ</label>
+
+              <label class="radio">
+                <input type="radio" name="categoly" value="家庭・育児">
+                <span>家庭・育児</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="categoly" value="学校・勉強">
+                <span>学校・勉強</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="categoly" value="スポーツ">
+                <span>スポーツ</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="categoly" value="芸術">
+                <span>芸術</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="categoly" value="コンピュータ">
+                <span>コンピュータ</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="categoly" value="ビジネス">
+                <span>ビジネス</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="categoly" value="旅行">
+                <span>旅行</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="categoly" value="その他">
+                <span>その他</span>
+              </label>
+            </div>
+            <div class="form">
+              <label class="h">手順・手法</label>
+              <textarea rows="15"></textarea>
+            </div>
+            <div class="form">
+              <label class="h">タグ（カンマ区切りで複数指定）</label>
+              <input type="text">
+            </div>
+            <div class="post-button">
+              <button type="submit" class="link-button button-small">プレビュー</button>
+              <button type="submit" class="link-button button-small">投稿</button>
+            </div>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>
