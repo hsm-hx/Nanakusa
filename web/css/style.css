@@ -60,7 +60,7 @@ label.h{
 label.radio{
   display: inline-block;
   margin-bottom: 10px;
-  width: 140px;
+  width: 130px;
   text-align: left;
 }
 input[type="radio"]{
@@ -152,6 +152,7 @@ h3.cook{
 
 .form{
   margin: 0 auto;
+  text-align: left;
 }
 
 .user-icon{
@@ -267,7 +268,9 @@ header .right-button{
   margin: 0 30px;
 }
 .search{
-  margin-top: 80px;
+  width: 90%;
+  margin: 80 auto;
+  text-align: center;
 }
 .search .box{
   margin-top: 20px;
