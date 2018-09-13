@@ -13,6 +13,11 @@ body{
   min-height: 100vh;
   background-color: #F9FFFA;
 }
+#content{
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
 .wrapper-center{
   text-align: center;
 }
@@ -26,11 +31,8 @@ a:hover, button:hover{
 a:visited{
   text-decoration: none;
 }
-li{
-  text-decoration: none;
-}
-ul{
-  text-decoration: none;
+ul, li{
+  list-style: none;
 }
 hr{
   margin: 30px 0;
@@ -127,6 +129,8 @@ h2.pen{
 h3{
   padding-left: 35px;
   margin: 10px 0;
+  min-height: 30px;
+
   font-size: 23;
   font-weight: 300;
 }
@@ -135,6 +139,11 @@ h3:hover{
 }
 h3.cook{
   background: url("../img/cook.png") no-repeat;
+}
+h4{
+  color: #495049;
+  font-size: 15;
+  border-bottom: #E2E2E2 solid 2px;
 }
 
 .text-right{
@@ -145,8 +154,6 @@ h3.cook{
 }
 /* ---- パーツ ---- */
 .box{
-  margin: 50px;
-  padding: 50px;
   background-color: #FFF;
   border-radius: 20px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -162,12 +169,14 @@ h3.cook{
   text-align: right;
 }
 .likes{
-  position: absolute;
-  top: 30px;
-  left: 10px;
   color: #DF5656;
   padding-left: 25px;
   background: url("../img/like.png") no-repeat;
+}
+.box.index-posts > .likes{
+  position: absolute;
+  top: 30px;
+  left: 10px;
 }
 .post-user{
   display: inline-block;
@@ -187,9 +196,15 @@ h3.cook{
 .user-icon-small{
   width: 45px;
 }
+.user-icon-large{
+  width: 80px;
+  vertical-align: middle;
+}
 
 .tags{
   display: inline-block;
+}
+.box.index-posts > .tags{
   position: absolute;
   left: 100px; top: 30px;
 }
@@ -227,6 +242,28 @@ span#extend{
   padding-left: 33px;
   min-height: 28px;
   background: url("../img/down.png") no-repeat;
+}
+
+.menu-bar{
+  display: inline-block;
+  margin-top: 30px;
+  width: 25%;
+
+  text-align: left;
+  vertical-align: top;
+}
+.menu-bar .box{
+  padding: 0;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+.menu-bar li{
+  padding: 10px 0 10px 20px;
+  border-bottom: #F6F6F6 solid 3px;
+}
+.menu-bar li:last-child{
+  padding: 10px 0 10px 20px;
+  border-bottom: none;
 }
 
 /* ---- header ---- */
@@ -297,6 +334,7 @@ header .link-button{
 /* ---- login.html ---- */
 #login.box{
   margin: 100px auto;
+  padding: 50px;
   width: 50%;
   text-align: center;
 }
@@ -329,7 +367,8 @@ header .link-button{
   padding: 0 70px;
 }
 .search .box{
-  margin-top: 20px;
+  margin: 20px 50px 50px 50px;
+  padding: 50px;
 }
 .search .link-button{
   margin-top: 30px;
@@ -372,6 +411,7 @@ header .link-button{
 .result .box{
   position: relative;
   margin: 30px 0;
+  padding: 50px;
 }
 .result .box #sort{
   display: block;
@@ -383,4 +423,33 @@ header .link-button{
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16);
   background-color: #ECECEC;
+}
+
+/* ---- user.html ---- */
+.profile-main.box{
+  display: inline-block;
+  margin: 30px;
+  padding: 30px;
+  width: calc(65% - 60px);
+}
+.user-head{
+  display: inline-block;
+  text-align: left;
+}
+.user-head span{
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.user-content{
+  text-align: left;
+}
+.user-content h3{
+  font-size: 15;
+}
+.user-content .likes{
+  margin-left: 10px;
+}
+.user-content .tag{
+  font-size: 10;
 }
